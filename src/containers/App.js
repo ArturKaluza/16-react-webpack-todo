@@ -29,7 +29,7 @@ class App extends React.Component {
     return (
       <div className={style.TodoApp}>
         <Title number={this.state.data.length}/>
-        hire will be components of ouer aplication
+        tu będzie reszta komponentów
       </div>
     );
   }

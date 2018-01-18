@@ -8301,7 +8301,7 @@ var App = function (_React$Component) {
         'div',
         { className: _App2.default.TodoApp },
         _react2.default.createElement(_Title2.default, { number: this.state.data.length }),
-        'hire will be components of ouer aplication'
+        'tu b\u0119dzie reszta komponent\xF3w'
       );
     }
   }]);
