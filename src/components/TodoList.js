@@ -1,21 +1,13 @@
 const React = require('react');
+import style from './TodoList.css';
 import uuid from 'uuid';
 
 class TodoList extends React.Component {
-    removeTodo(e) {
-    console.log('hey');
-      let id = e.target.closest('li').getAttribute('data-id');
-    
-    const remainder = this.state.data.filter(todo => todo.id !== id);
-    this.setState({data: remainder});
-    console.log(this.state.data);
-  }
-  
   render() {
     return (
-      <div className="todoList">
+      <div className={style.todoList}>
         <ul>
-          {this.props.array.map(task => <li key={task.id} data-id={task.id}>{task.text}<span onClick={this.props.remLi}>X</span></li>)}
+          {this.props.array.map(task => <li key={task.id} data-id={task.id}>{task.text}<button onClick={this.props.remLi}>X</button></li>)}
         </ul>
       </div>
     )
@@ -23,3 +15,5 @@ class TodoList extends React.Component {
 }
 
 export default TodoList;
+
+

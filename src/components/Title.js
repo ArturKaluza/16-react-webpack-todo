@@ -4,9 +4,9 @@ import style from './Title.css';
 class Title extends React.Component {
   render() {
     return (
-      <div className='title'>
+      <div className={style.title}>
         <h1>ToDo App</h1>
-        <p>Liczba zadań do wykonania: {this.props.number}</p>
+        <p>Number of tasks: {this.props.number}</p>
       </div>
     );
   }

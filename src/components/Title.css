@@ -1,13 +1,20 @@
 .title {
-  text-align: center;  
+  text-align: center; 
+  height: 120px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #A0ACDD;
+  font-family: 'Oswald', sans-serif;
 }
 
-h1 {
+.title h1 {
   font-size: 30px;
-  color: blue;
 }
 
-p {
+.title p {
   font-size: 26px;
-  color: red;
+  margin: 15px auto;
+  
 }

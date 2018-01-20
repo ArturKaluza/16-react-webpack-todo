@@ -1,0 +1,25 @@
+.todoList ul {
+  padding: 0;
+  list-style-type: none;
+  font-size: 24px;
+  line-height: 30px;
+  min-height: 400px;
+}
+
+.todoList ul li {
+  margin: 10px 15px 0 15px;
+  padding-left: 3px;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+.todoList button {
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: red;
+}
+
+
