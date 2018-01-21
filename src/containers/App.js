@@ -28,7 +28,7 @@ class App extends React.Component {
 
   addTodo(e) {
     e.preventDefault();
-    let val = e.target.elements.task.value;
+    let val = e.target.elements.task.value.trim();
     e.target.elements.task.value = '';
     if (val){
       const todo = {
@@ -47,10 +47,11 @@ class App extends React.Component {
   }
   
   render() {
+    
     return (
       <div className={style.TodoApp}>
         <Title number={this.state.data.length} />
-        <TodoList array={this.state.data} remLi={this.removeTodo} />
+        <TodoList array={this.state.data} id={this.state.data.id} remLi={this.removeTodo} />
         <TodoForm add={this.addTodo} />
       </div>
     );
